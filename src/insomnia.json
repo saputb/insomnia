@@ -1,0 +1,201 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-01-05T23:11:50.211Z",
+  "__export_source": "insomnia.desktop.app:v7.0.6",
+  "resources": [
+    {
+      "_id": "req_ecc3166fc81b43b89ce15231b717a999",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"data\": 123,\n\t\"value\": true\n}"
+      },
+      "created": 1578264171545,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_235a145c02354d698208705349cd9f30",
+          "name": "Authorization",
+          "value": "Bearee 123"
+        },
+        {
+          "id": "pair_96c44870cd494897ad89e64eac9d7349",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578261034839,
+      "method": "POST",
+      "modified": 1578265613282,
+      "name": "Post JSON Request",
+      "parameters": [],
+      "parentId": "fld_7d7810b116214dfeb48610e1c8341f88",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "https://pokeapi.co/api/v2/pokemon/ditto",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_7d7810b116214dfeb48610e1c8341f88",
+      "created": 1578265608873,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578265608873,
+      "modified": 1578265608873,
+      "name": "Test Requests",
+      "parentId": "wrk_d9f4b2dc1bee403eb67be66c4d55cf67",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_d9f4b2dc1bee403eb67be66c4d55cf67",
+      "created": 1578261027688,
+      "description": "",
+      "modified": 1578261027688,
+      "name": "Insomnia to Postman",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_7b9223e4d81042fcbcf4e805647f81e0",
+      "authentication": {},
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_4c024fece3f64148947c7f7f77cf6958",
+            "name": "data",
+            "value": "123"
+          },
+          {
+            "description": "",
+            "id": "pair_f0bb4eb6993d4eaab7eeccd6967c1ea1",
+            "name": "value",
+            "value": "value"
+          }
+        ]
+      },
+      "created": 1578264199156,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_235a145c02354d698208705349cd9f30",
+          "name": "Authorization",
+          "value": "Bearee 123"
+        },
+        {
+          "id": "pair_96c44870cd494897ad89e64eac9d7349",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578261034814,
+      "method": "POST",
+      "modified": 1578265614289,
+      "name": "Post Form Request",
+      "parameters": [],
+      "parentId": "fld_7d7810b116214dfeb48610e1c8341f88",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "https://pokeapi.co/api/v2/pokemon/ditto",
+      "_type": "request"
+    },
+    {
+      "_id": "req_aec61b74eb444b5db9628a7a41593fb9",
+      "authentication": {},
+      "body": {},
+      "created": 1578261034789,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_235a145c02354d698208705349cd9f30",
+          "name": "Authorization",
+          "value": "Bearee 123"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578261034789,
+      "method": "GET",
+      "modified": 1578265898256,
+      "name": "Get Request",
+      "parameters": [],
+      "parentId": "fld_7d7810b116214dfeb48610e1c8341f88",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ baseURL  }}/ditto?data=12",
+      "_type": "request"
+    },
+    {
+      "_id": "env_ab01a8c5de55f764a0eb406ec1ff75e047ea6a25",
+      "color": null,
+      "created": 1578261027758,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1578261027758,
+      "modified": 1578261027758,
+      "name": "Base Environment",
+      "parentId": "wrk_d9f4b2dc1bee403eb67be66c4d55cf67",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_ab01a8c5de55f764a0eb406ec1ff75e047ea6a25",
+      "cookies": [
+        {
+          "creation": "2020-01-05T21:50:43.995Z",
+          "domain": "pokeapi.co",
+          "expires": "2020-02-04T21:50:43.000Z",
+          "extensions": ["SameSite=Lax"],
+          "hostOnly": false,
+          "httpOnly": true,
+          "id": "9269290373580281",
+          "key": "__cfduid",
+          "lastAccessed": "2020-01-05T21:50:43.995Z",
+          "path": "/",
+          "secure": true,
+          "value": "db1d9750d75e9f346f93cf4922979562e1578261043"
+        }
+      ],
+      "created": 1578261027770,
+      "modified": 1578261043996,
+      "name": "Default Jar",
+      "parentId": "wrk_d9f4b2dc1bee403eb67be66c4d55cf67",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_79ba3262351b46d1b618e77cada126d9",
+      "color": null,
+      "created": 1578265873283,
+      "data": {
+        "baseURL": "https://pokeapi.co/api/v2/pokemon"
+      },
+      "dataPropertyOrder": {
+        "&": ["baseURL"]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1578265873283,
+      "modified": 1578265884172,
+      "name": "Development",
+      "parentId": "env_ab01a8c5de55f764a0eb406ec1ff75e047ea6a25",
+      "_type": "environment"
+    }
+  ]
+}
